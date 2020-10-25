@@ -7,7 +7,7 @@ def download():
     try:
         youtube = pytube.YouTube(video_url)
         video = youtube.streams.first()
-        video.download("C:/Users/asaad/Desktop/Videos")
+        video.download("C:/Users/#Put you name of your user/Desktop/Videos")
         notif.config(fg="green",text="Download complete")
     except Exception as e:
         print(e)
