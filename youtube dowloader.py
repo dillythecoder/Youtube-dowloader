@@ -7,7 +7,8 @@ def download():
     try:
         youtube = pytube.YouTube(video_url)
         video   = youtube.streams.first()
-        video.download("C:/Users/asaad/Videos")
+        #PUT WHERE YOUR VIDEOS FILES IS LOCATED
+        ideo.download("C:/Users/asaad/Videos")
         notif.config(fg="green",text="Download complete")
     except Exception as e:
         print(e)
